@@ -146,7 +146,7 @@ This project implements a full-HDMI Pong game on the PYNQ-Z2 board:
 
 ### 3.2 Custom IP: Pong Engines
 
-* Wrapped `object`, `paddle`, `score_board`, and `gameover_bitmap` as reusable IP.
+* Wrapped `HDMI TX`,`object`, `paddles`, `score_board`,`lsfr`, and `gameover_bitmap` as reusable IP.
 * Connected via AXI-Lite for control and status.
 
   ![Block_Diagram](/Images/BlockDiagram.png)
