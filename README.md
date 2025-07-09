@@ -207,27 +207,57 @@ program_hw_devices
 
 ---
 
+
 ## 6. Final Hardware Report
 
-### 6.1 Power Consumption
+### 6.1 Device Floorplan
 
-| Supply   | Current (mA) | Power (mW) |
-| -------- | ------------ | ---------- |
-| VccINT0  | 120          | 600        |
-| VccPSINT | 80           | 400        |
+![FPGA Floorplan](/Images/Device.png)
 
-### 6.2 Clocking Summary
+Placement shows core logic densely packed in the bottom-left quadrant (bank X0Y0), with BRAM and clocking resources along the right edge.
 
-* **Pixel Clock:** 74.25 MHz
-* **AXI Bus:** 100 MHz
+### 6.2 Power Consumption
 
-### 6.3 Resource Utilization & Timing
+![Power Analysis](/Images/Power.png)
 
-| Resource | Used | Total | Util % |
-| -------- | ---- | ----- | ------ |
-| LUT      | 10 K | 53 K  | 19 %   |
-| FF       | 8 K  | 106 K | 7 %    |
-| BRAM18K  | 25   | 140   | 18 %   |
+| Metric              |          Value |
+| ------------------- | -------------: |
+| Total On-Chip Power |        0.416 W |
+| — Dynamic           |        0.304 W |
+| — Static            |        0.112 W |
+| MMCM                | 0.114 W (37 %) |
+| I/O                 | 0.133 W (43 %) |
+| BRAM                | 0.048 W (16 %) |
+| Clocks              |  0.007 W (2 %) |
+| Signals             |  0.001 W (1 %) |
+| Logic               |  0.001 W (1 %) |
+
+### 6.3 Resource Utilization
+
+![Utilization Summary](/Images/Utilization.png)
+
+| Resource        | Used |   Total | Util % |
+| --------------- | ---: | ------: | -----: |
+| Slice LUTs      | 1274 |  53 200 |  2.4 % |
+| Slice Registers |  363 | 106 400 | 0.34 % |
+| BRAM18K Tiles   |   18 |     140 | 12.9 % |
+| OLOGIC          |    8 |     125 |  6.4 % |
+| BUFGCTRL        |    2 |      32 |  6.3 % |
+| MMCME2\_ADV     |    1 |       4 |   25 % |
+
+### 6.4 Timing Summary
+
+![Timing Summary](/Images/Timing.png)
+
+| Metric                     |    Value |
+| -------------------------- | -------: |
+| Worst Negative Slack (WNS) | 0.782 ns |
+| Worst Hold Slack (WHS)     | 0.046 ns |
+| Worst Pulse Width Slack    | 0.511 ns |
+| Failing Endpoints          |        0 |
+
+All user-specified timing constraints are met at a 74.25 MHz pixel clock.
+
 
 ### 6.4 Block Diagram & Schematic
 
