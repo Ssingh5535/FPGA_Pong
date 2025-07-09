@@ -207,6 +207,16 @@ program_hw_devices
 * COE parser is silent—always preview before bitstream.
 * Register alignment is critical for TMDS timing closure.
 
+### 5.4 Monitor Dispaly Test
+Below are photographs captured during on‑board testing of the PYNQ‑Z2 running the FPGA‑accelerated Pong design:
+
+In‑Game Score DisplayPlayer 1’s score (9) is rendered in the top‑left corner; paddle, ball, and Player 2’s score (2) appear in distinct colors. Frame‑buffered sprites and ASCII digits are drawn with sub‑pixel alignment at 1280×720 resolution, maintaining smooth motion under 60 Hz refresh.
+
+Game Over SplashOn game termination, the 1280×200 “GAME OVER” bitmap pops up in magenta over a black background. The overlay logic draws all characters simultaneously at exact vertical centering, demonstrating correct COE‑loaded ROM data and pixel‑perfect timing.
+![Monitor Display](/Images/Score.png)
+![Monitor Gameover](/Images/gameover.png)
+
+
 ---
 
 
