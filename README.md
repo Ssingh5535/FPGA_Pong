@@ -35,6 +35,7 @@ A hardware-accelerated implementation of the classic Pong game, built end-to-end
    * 5.1 [Internal Logic Analyzer (ILA)](#51-internal-logic-analyzer-ila)
    * 5.2 [Common Issues & Resolutions](#52-common-issues--resolutions)
    * 5.3 [Lessons Learned](#53-lessons-learned)
+   * * 5.3 [Monitor Dispaly Test](#54-Monitor-Dispaly-Test)
 9. [6. Final Hardware Report](#6-final-hardware-report)
 
    * 6.1 [Power Consumption](#61-power-consumption)
