@@ -132,7 +132,7 @@ This project implements a full-HDMI Pong game on the PYNQ-Z2 board:
 
 ### 2.3 Waveform Inspection & Coverage
 
-* Use Vivado Simulator or ModelSim to inspect `active`, `hpos`, `vpos`, `bitmap`, and final `pixel` signals.
+* Uses Vivado Simulator to inspect `active`, `hpos`, `vpos`, `bitmap`, and final `pixel` signals.
 * Collect coverage on all game states and overlay conditions.
 
 ---
