@@ -149,6 +149,8 @@ This project implements a full-HDMI Pong game on the PYNQ-Z2 board:
 * Wrapped `object`, `paddle`, `score_board`, and `gameover_bitmap` as reusable IP.
 * Connected via AXI-Lite for control and status.
 
+  ![Block_Diagram](/Images/BlockDiagram.png)
+
 ### 3.3 BRAM for “GAME OVER” Bitmap
 
 * Block Memory Generator configured 200×1280 bits with COE initialization.
