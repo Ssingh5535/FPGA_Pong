@@ -260,9 +260,4 @@ Placement shows core logic densely packed in the bottom-left quadrant (bank X0Y0
 
 All user-specified timing constraints are met at a 74.25 MHz pixel clock.
 
-
-### 6.4 Block Diagram & Schematic
-
-See `Images/block_diagram.png` and `Images/schematic.pdf` for the Vivado BD and netlist schematic.
-
 ---
