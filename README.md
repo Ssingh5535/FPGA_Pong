@@ -1,4 +1,4 @@
-# Pong on PYNQ-Z2 (HDMI + CPU-Controlled AI)
+# Pong on PYNQ-Z2 (HDMI + CPU-Controlled Player 2)
 
 A hardware-accelerated implementation of the classic Pong game, built end-to-end in Xilinx Vivado and Vitis for the PYNQ-Z2 board.
 
